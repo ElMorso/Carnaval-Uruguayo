@@ -1,0 +1,190 @@
+/* Animación de fondo con movimiento de colores */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+body {
+    animation: backgroundAnimation 5s linear infinite;
+    background: linear-gradient(90deg, #f50a0a, #fd5506, #e8ec09, #db920b, #e910d7);
+    background-size: 200% 100%;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 80%;
+    left: 5%
+}
+
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #05080a;
+    border: 2px solid #020305;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-check-label {
+    color: #0b0f12;
+}
+
+.tituloform {
+    color: #020305;
+    position: relative; 
+}
+
+.footer {
+    position: fixed; /* Posición fija en la parte inferior de la ventana gráfica del navegador */
+    bottom: 0; /* Fijar el borde inferior del footer en la parte inferior de la ventana */
+    width: 100%; /* Ancho completo del footer */
+    background-color: #f8f9fa; /* Color de fondo del footer */
+    text-align: center; /* Alinear el contenido del footer en el centro */
+}
+
+.tituloindex {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #000000;
+    text-align: center; 
+}
+
+/* Estilo para el párrafo */
+.text-justify {
+    font-size: 16px; 
+    line-height: 2.5; 
+    text-align: center;
+    color: #414141;
+    font-weight: 200;
+    background-color: transparent;
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mejorformulariodelmundo {
+    margin-top: -150px; /* Ajusta el valor según tus necesidades */
+}
+
+.container {
+    position: relative;
+}
+
+.tituloindex {
+    position: absolute;
+    top: 25px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    text-align: center;
+    color: whitesmoke;
+}
+
+.navbar-brand {
+    margin-right: 420px; /* Ajusta el valor según tu preferencia */
+}
+
+
+.navbar-brand, .nav-link {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Cambia el color de los enlaces de la barra de navegación a negro */
+.navbar-dark .navbar-nav .nav-link {
+    color: #d8c3c3; /* Negro */
+}
+
+/* Añade margen a los enlaces para separarlos de "CARNAVAL" */
+.nav-link {
+    text-align: right;
+    margin-left: 0; /* Ajusta el valor según tu preferencia */
+}
+
+.cuadro-oscuro {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto en el cuadro */
+    padding: 20px; /* Espacio interno alrededor del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior entre el título y el cuadro */
+
+    /* Estilos responsivos */
+    max-width: 80%; /* Ancho máximo del cuadro para evitar que sea demasiado ancho en pantallas grandes */
+    margin: 20px auto; /* Centrar el cuadro horizontalmente en cualquier dispositivo */
+}
+
+.titulo-con-imagen {
+    text-align: center; /* Centra el contenido dentro del div */
+}
+
+/* Estilos para los títulos */
+.titulo-con-imagen h2 {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
+/* Estilos para las imágenes */
+.espacio-para-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.espacio-para-imagen img {
+    width: 50%; /* Las imágenes ocuparán el 100% del espacio disponible */
+    height: auto; /* Mantendrá la proporción original de la imagen */
+    margin-bottom: 50px;
+}
+
+.espacio-entre-foto-y-footer {
+    height: 50px; /* Ajusta la altura del espacio según tus preferencias */
+}
