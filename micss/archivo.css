@@ -81,11 +81,19 @@ label {
 }
 
 .footer {
-    position: fixed; /* Posición fija en la parte inferior de la ventana gráfica del navegador */
-    bottom: 0; /* Fijar el borde inferior del footer en la parte inferior de la ventana */
-    width: 100%; /* Ancho completo del footer */
-    background-color: #f8f9fa; /* Color de fondo del footer */
-    text-align: center; /* Alinear el contenido del footer en el centro */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px; /* Añade relleno para centrar el contenido verticalmente */
+}
+
+/* Para centrar el contenido del footer horizontalmente */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloindex {
@@ -93,6 +101,12 @@ label {
     font-weight: bold; 
     color: #000000;
     text-align: center; 
+    margin: 0; /* Elimina el margen superior por defecto */
+}
+
+/* Agrega un margen en la parte superior del footer para separarlo del contenido */
+.footer {
+    margin-top: 20px;
 }
 
 /* Estilo para el párrafo */
@@ -132,9 +146,23 @@ label {
 }
 
 .navbar-brand {
-    margin-right: 420px; /* Ajusta el valor según tu preferencia */
+    margin-right: 350px; /* Ajusta el valor según tu preferencia */
 }
 
+.navbar-brand {
+    font-family: 'Comic Sans MS', cursive;
+    border: 1px solid #ffffff; /* Agrega un borde alrededor del título */
+    border-radius: 20px; /* Establece el radio de borde para hacerlo redondeado */
+    padding: 10px 20px; /* Ajusta el relleno alrededor del título */
+    background: linear-gradient(45deg, transparent, #ecaf06, transparent);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s;
+}
+
+.navbar-brand:hover {
+    background-position: 0;
+}
 
 .navbar-brand, .nav-link {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -181,6 +209,69 @@ label {
 
 .espacio-para-imagen img {
     width: 50%; /* Las imágenes ocuparán el 100% del espacio disponible */
+    height: auto; /* Mantendrá la proporción original de la imagen */
+    margin-bottom: 50px;
+}
+
+.espacio-entre-foto-y-footer {
+    height: 50px; /* Ajusta la altura del espacio según tus preferencias */
+}
+
+#myCarousel {
+    margin-bottom: 100px; /* Agrega un margen inferior entre el carrusel y el footer */
+    margin-top: 90px;
+}
+
+/* Establece un espacio entre la imagen y el texto */
+.carousel-caption {
+    bottom: 0; /* Alinea la parte inferior de la caja de texto con la parte inferior de la imagen */
+    padding: 10px; /* Espacio interno alrededor del título */
+    border-radius: 5px; /* Radio de borde para hacerlo redondeado */
+    width: 100%; /* Ajusta el ancho para que coincida con la imagen */
+    position: absolute; /* Posición absoluta para superponer el texto en la imagen */
+    margin-left: -170px;
+}
+
+
+/* Alinea el título y el texto */
+.carousel-caption h3 {
+    margin: 0;
+}
+
+.carousel-caption p {
+    margin: 0;
+    padding: 10px; /* Añade espacio entre el título y el párrafo */
+}
+
+/* Establece un espacio entre las diapositivas */
+.carousel-item {
+    margin-top: 20px; /* Espacio superior para separar las diapositivas */
+}
+
+.gray-rounded-box {
+    background-color: #333; /* Color de fondo gris */
+    color: #fff;
+    border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+    padding: 20px; /* Espacio interno alrededor del cuadro de texto */
+    margin-bottom: 80px; /* Ajusta el margen inferior del cuadro de texto */
+    margin-top: 20px;
+}
+
+.cuadro-oscuro h4 {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+    padding: 10px; /* Espacio interno alrededor del título */
+}
+
+.cuadro-oscuro {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto en el cuadro */
+    padding: 20px; /* Espacio interno alrededor del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior entre el título y el cuadro */
+    max-width: 80%; /* Ancho máximo del cuadro para evitar que sea demasiado ancho en pantallas grandes */
+    margin: 20px auto; /* Centrar el cuadro horizontalmente en cualquier dispositivo */
+    text-align: center; /* Alinea el texto en el centro horizontalmente */
+}
     height: auto; /* Mantendrá la proporción original de la imagen */
     margin-bottom: 50px;
 }
