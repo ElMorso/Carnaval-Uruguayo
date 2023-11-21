@@ -12,6 +12,7 @@ body {
   animation: backgroundAnimation 5s linear infinite;
   background: linear-gradient(90deg, #f50a0a, #fd5506, #e8ec09, #db920b, #e910d7);
   background-size: 200% 100%;
+  overflow-x: hidden; /* Esto oculta la barra de desplazamiento horizontal */
 }
 
 .map-container {
